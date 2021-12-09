@@ -1,0 +1,108 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 1,
+    "pending": 0,
+    "failures": 0,
+    "start": "2021-12-07T15:51:02.806Z",
+    "end": "2021-12-07T15:51:07.685Z",
+    "duration": 4879,
+    "testsRegistered": 1,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "06de3028-34e9-4f82-b4d4-ce3e77d02f44",
+      "title": "",
+      "fullFile": "cypress/integration/Tests/loginTest.spec.js",
+      "file": "cypress/integration/Tests/loginTest.spec.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "db64599b-8fe7-4cbd-9a34-bd1b067a71c1",
+          "title": "Test Suite 1",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Login Successfully",
+              "fullTitle": "Test Suite 1 Login Successfully",
+              "timedOut": null,
+              "duration": 2796,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "//cy.visit('https://frontend.staging.hivebuy.de/login')\nconst lp = new _Login.default();\nlp.visitURL();\nlp.getEmailAddress().type('Mohammad@hivebuy.de');\nlp.getPassword().type('Test123!!');\nlp.getLoginButton().click();",
+              "err": {},
+              "uuid": "d22b1791-ecc6-4001-a1c6-c2f8c19e9d00",
+              "parentUUID": "db64599b-8fe7-4cbd-9a34-bd1b067a71c1",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "d22b1791-ecc6-4001-a1c6-c2f8c19e9d00"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 2796,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.0.1"
+    },
+    "marge": {
+      "options": {
+        "id": "default",
+        "reportDir": "cypress/report",
+        "quite": true,
+        "overwrite": false,
+        "html": false,
+        "json": true,
+        "timestamp": "mmddyyyy_HHMMss"
+      },
+      "version": "6.0.1"
+    }
+  }
+}
