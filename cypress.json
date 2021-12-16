@@ -1,14 +1,15 @@
 {
-    "reporter": "cypress-multi-reporters",
-    "reporterOptions": {
-        "reporterEnabled": "mochawesome",
-        "mochawesomeReporterOptions":{
-        "reportDir": "cypress/report",
-        "quite": true,
-        "overwrite": false,
-        "html": false,
-        "json": true,
-        "timestamp": "mmddyyyy_HHMMss"
-        }
+  "reporter": "cypress-multi-reporters",
+  "reporterOptions": {
+    "reporterEnabled": "mochawesome",
+    "mochawesomeReporterOptions": {
+      "reportDir": "cypress/report",
+      "quite": true,
+      "overwrite": false,
+      "html": false,
+      "json": true,
+      "timestamp": "mmddyyyy_HHMMss"
     }
-  }
+  },
+  "projectId": "9nxhnb"
+}
