@@ -1,0 +1,112 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 0,
+    "pending": 0,
+    "failures": 1,
+    "start": "2021-12-16T08:29:17.837Z",
+    "end": "2021-12-16T08:29:18.207Z",
+    "duration": 370,
+    "testsRegistered": 1,
+    "passPercent": 0,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "01f6ace4-6dac-485a-8833-9900efa927f7",
+      "title": "",
+      "fullFile": "cypress/integration/Tests/loginTest.spec.js",
+      "file": "cypress/integration/Tests/loginTest.spec.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "8b221fea-71eb-45bd-936a-3a50b799a9d9",
+          "title": "Test Suite 1",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Login Successfully",
+              "fullTitle": "Test Suite 1 Login Successfully",
+              "timedOut": null,
+              "duration": 274,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "const lp = new _Login.default();\nlp.visitURL();\nlp.getEmailAddress().type('Mohammad@hivebuy.de');\nlp.getPassword().type('Test123!!');\nlp.getLoginButton().click();",
+              "err": {
+                "message": "ReferenceError: baseUrl is not defined",
+                "estack": "ReferenceError: baseUrl is not defined\n    at LoginPage.visitURL (http://www.frontend.staging.de/__cypress/tests?p=cypress/integration/Tests/loginTest.spec.js:219:24)\n    at Context.eval (http://www.frontend.staging.de/__cypress/tests?p=cypress/integration/Tests/loginTest.spec.js:193:8)",
+                "diff": null
+              },
+              "uuid": "6b4b0843-9585-4829-93ec-46f57bf58047",
+              "parentUUID": "8b221fea-71eb-45bd-936a-3a50b799a9d9",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [],
+          "failures": [
+            "6b4b0843-9585-4829-93ec-46f57bf58047"
+          ],
+          "pending": [],
+          "skipped": [],
+          "duration": 274,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.0.1"
+    },
+    "marge": {
+      "options": {
+        "id": "default",
+        "reportDir": "cypress/report",
+        "quite": true,
+        "overwrite": false,
+        "html": false,
+        "json": true,
+        "timestamp": "mmddyyyy_HHMMss"
+      },
+      "version": "6.0.1"
+    }
+  }
+}
